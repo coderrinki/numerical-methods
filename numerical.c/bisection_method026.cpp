@@ -12,7 +12,7 @@ int main(){
 	scanf("%f,%f",&a,&b);
 	}
 	while(f(a)*f(b)>0.0);
-	do{c=a-f(a)/(f(a)-f(b))*(a-b);
+	do{c=(a+b)/2.0;
 	printf("\n k=%d \t a=%f \t b=%f \t c=%f \t f(c)=%f",k,a,b,c,f(c));
 	if(f(a)*f(c)<0.0)
 	b=c;
